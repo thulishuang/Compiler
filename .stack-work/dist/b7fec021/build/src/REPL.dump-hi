@@ -1,0 +1,149 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-13 05:52:11.3559306 UTC
+
+interface compiler-0.1.0.0-I0pxvr0RakAFj74FxK0lcc:REPL 8001
+  interface hash: 7e9dc94a678f00a2c3b2585b27fac1d6
+  ABI hash: 181a831de1a990308493c597623ce367
+  export-list hash: 88a0ccbda236ad7361f44f2b4dacde8f
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 365edb496d38399416a64131c77130e2
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  REPL.defMain
+  REPL.getString
+  REPL.mainLoop
+  REPL.Env
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-4RIYnAHyOmg6Dh17ENWi43*
+                      base-4.9.0.0* binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      hashable-1.2.4.0@hashable-1.2.4.0-Ctl752zbguF6QanxurLOm2
+                      integer-gmp-1.0.0.1
+                      integer-logarithms-1@integer-logarithms-1-E6LvTbkhTkGIa6wPB3rtJw
+                      primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa
+                      scientific-0.3.4.10@scientific-0.3.4.10-2Y658Wts4fDGgAkWhKOJwC
+                      text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-4RIYnAHyOmg6Dh17ENWi43:Data.Attoparsec.Text.Internal
+         base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.4.0@hashable-1.2.4.0-Ctl752zbguF6QanxurLOm2:Data.Hashable.Generic
+         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text
+         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text.Show
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3:Data.Vector.Fusion.Bundle
+family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-4RIYnAHyOmg6Dh17ENWi43:Data.Attoparsec.Internal.Types
+                         base-4.9.0.0:Control.Applicative base-4.9.0.0:Data.Complex
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Functor.Identity base-4.9.0.0:Data.List.NonEmpty
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Semigroup
+                         base-4.9.0.0:Data.Type.Equality base-4.9.0.0:Data.Version
+                         base-4.9.0.0:Data.Void base-4.9.0.0:GHC.Exts
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa:Control.Monad.Primitive
+                         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text.Lazy
+                         vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3:Data.Vector
+import  -/  attoparsec-0.13.1.0@attoparsec-0.13.1.0-4RIYnAHyOmg6Dh17ENWi43:Data.Attoparsec.Text ba4a12853cbdd66a9b1c1bfddeab7ff9
+import  -/  base-4.9.0.0:Data.Foldable 3cbed01c922be29649c33015287c82ca
+import  -/  base-4.9.0.0:Data.Functor 67cebb006c069ea73adcd2d468cdb0dc
+import  -/  base-4.9.0.0:Data.OldList 3c899c6d8e6204063769214449ac0954
+import  -/  base-4.9.0.0:GHC.Base dd8044a8d640eee51828c17c476a6ba7
+import  -/  base-4.9.0.0:GHC.IO.Handle 0ec5f3e063751c91152d6f1b0286ca9a
+import  -/  base-4.9.0.0:GHC.IO.Handle.FD 5311a39f33255d27517e14bdb344dca6
+import  -/  base-4.9.0.0:GHC.List 47d436dfb7454bb1883fb4d943e3f389
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  base-4.9.0.0:System.IO c1068c4f4231e3198e330f99a58145b0
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 59ba4f128d7d19046010538c416f3875
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base d6db6ac95571c976686f97c64548b060
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
+0a8268ff7bdbbc61a7465e8d3b0b9d84
+  $sinsert_$sgo10 ::
+    GHC.Base.String
+    -> a1
+    -> Data.Map.Base.Map GHC.Base.String a1
+    -> Data.Map.Base.Map GHC.Base.String a1
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
+dcf5e7a049f3604b94ea39edaaa251d6
+  $slookup1 ::
+    GHC.Base.String
+    -> Data.Map.Base.Map GHC.Base.String a -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+c36790ee2937bf87c4b8756e9acbf885
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module REPL.$trModule2 REPL.$trModule1) -}
+02afa40d28376d3ff66596329edd0cf0
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "REPL"#) -}
+6922b44479ab7e93975e589882162eaf
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "compiler-0.1.0.0-I0pxvr0RakAFj74FxK0lcc"#) -}
+a5904dc45ed4e34abf096c2e01f41b81
+  type Env = Data.Map.Base.Map GHC.Base.String GHC.Base.String
+786b91af6d5d40d4e7274ae83b42582d
+  defMain :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                REPL.defMain1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+01957f5a10d56583ea7bee283c605425
+  defMain1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        REPL.defMain3
+                        GHC.Types.True
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 REPL.defMain2
+                   (Data.Map.Base.Tip @ GHC.Base.String @ GHC.Base.String)
+                   ipv }) -}
+b7b7e82e60ac747676f0bc58a6bcd6a6
+  defMain2 ::
+    REPL.Env
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><S,U> -}
+fbdf4e763eee130b878fd88d3266d0a3
+  defMain3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "This is a simple REPL"#) -}
+2d7a25b42fb15e720f98be08ec7640a6
+  getString :: [[GHC.Types.Char]] -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,U> -}
+aa1d44a35365b87545070e96f1171c19
+  mainLoop :: REPL.Env -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                REPL.defMain2
+                  `cast`
+                (<REPL.Env>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

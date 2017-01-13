@@ -1,0 +1,145 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-13 06:13:09.5344466 UTC
+
+interface compiler-0.1.0.0-I0pxvr0RakAFj74FxK0lcc:BoolExpr 8001
+  interface hash: 5687501d249cab70264c694749b6166c
+  ABI hash: 6bc360c4345c527827b71d453af02c24
+  export-list hash: 938e5a98769e0827b558347c7828b464
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 36f5ed5780f13d451f8563110c8a6d30
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  BoolExpr.defMain
+  BoolExpr.eval
+  BoolExpr.evalWithErrorThrowing
+module dependencies: Parser
+package dependencies: array-0.5.1.1@array-0.5.1.1
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-4RIYnAHyOmg6Dh17ENWi43*
+                      base-4.9.0.0* binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      hashable-1.2.4.0@hashable-1.2.4.0-Ctl752zbguF6QanxurLOm2
+                      integer-gmp-1.0.0.1
+                      integer-logarithms-1@integer-logarithms-1-E6LvTbkhTkGIa6wPB3rtJw
+                      primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa
+                      scientific-0.3.4.10@scientific-0.3.4.10-2Y658Wts4fDGgAkWhKOJwC
+                      text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs*
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-4RIYnAHyOmg6Dh17ENWi43:Data.Attoparsec.Text.Internal
+         base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.4.0@hashable-1.2.4.0-Ctl752zbguF6QanxurLOm2:Data.Hashable.Generic
+         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text
+         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text.Show
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3:Data.Vector.Fusion.Bundle
+family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-4RIYnAHyOmg6Dh17ENWi43:Data.Attoparsec.Internal.Types
+                         base-4.9.0.0:Control.Applicative base-4.9.0.0:Data.Complex
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Functor.Identity base-4.9.0.0:Data.List.NonEmpty
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Semigroup
+                         base-4.9.0.0:Data.Type.Equality base-4.9.0.0:Data.Version
+                         base-4.9.0.0:Data.Void base-4.9.0.0:GHC.Exts
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa:Control.Monad.Primitive
+                         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text.Lazy
+                         vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3:Data.Vector
+import  -/  attoparsec-0.13.1.0@attoparsec-0.13.1.0-4RIYnAHyOmg6Dh17ENWi43:Data.Attoparsec.Text ba4a12853cbdd66a9b1c1bfddeab7ff9
+import  -/  attoparsec-0.13.1.0@attoparsec-0.13.1.0-4RIYnAHyOmg6Dh17ENWi43:Data.Attoparsec.Text.Internal d4f930cb8cb2c52be61d6ad3073d0922
+import  -/  base-4.9.0.0:Control.Applicative fdcece230f8af145aec7b432bfe73083
+import  -/  base-4.9.0.0:Data.Either 4cef602ce360a0155ac0dd580a5b4863
+import  -/  base-4.9.0.0:Data.Functor 67cebb006c069ea73adcd2d468cdb0dc
+import  -/  base-4.9.0.0:GHC.Base dd8044a8d640eee51828c17c476a6ba7
+import  -/  base-4.9.0.0:GHC.Show 0b5845243cb2ec62b57dd6963d276ec6
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  base-4.9.0.0:System.IO c1068c4f4231e3198e330f99a58145b0
+import  -/  Parser 28cc00f614fbcf1e1ebbd5969da82854
+  exports: 8d4d089a11bd7c5d4a0b2e5c40ac3c8d
+  And 1a832e20046a56e9705da01494035420
+  Expr 8619919ce775e635a17e9aea377ffce6
+  FalseLit 5946dbd581a8f3c232b8166f049e742f
+  Not a32d65eca583902eb7e1e2f684efd5a2
+  Or 40f403dd2fa3488836bb68c598b3119b
+  TrueLit ff31ceda39977fe1ae4b77de8e36b62a
+  exprParser 6deba14e39db4352a7224b29cc2ef0d1
+  notParser 98d7309b6124a6f23865b2c80bb53fc9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
+import  -/  text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text 769c914c1985c5c356af906de5892ffb
+c357b2ff143fccb9a97c0230ebe1c632
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   BoolExpr.$trModule2
+                   BoolExpr.$trModule1) -}
+87ec43f5aa8f6543745725f28bf02dba
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "BoolExpr"#) -}
+353a29221507d711ac1d2a56845165f6
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "compiler-0.1.0.0-I0pxvr0RakAFj74FxK0lcc"#) -}
+ee51d3f21b3dda384f51fa808d493621
+  defMain :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                BoolExpr.defMain1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+ed962c9b9db8d3b565b7447c806afc47
+  defMain1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U> -}
+c6606a63997e6c49cb5c8c0aa70f8946
+  eval :: Parser.Expr -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U> -}
+a5b0ea022a1d6f1e94f7476378794eea
+  evalWithErrorThrowing ::
+    Data.Either.Either GHC.Base.String Parser.Expr -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.Either.Either
+                            GHC.Base.String Parser.Expr) ->
+                 case ds of wild {
+                   Data.Either.Left errStr
+                   -> BoolExpr.evalWithErrorThrowing1
+                        @ [GHC.Types.Char]
+                        (GHC.Types.: @ GHC.Types.Char)
+                        errStr
+                   Data.Either.Right expr
+                   -> case BoolExpr.eval expr of wild1 {
+                        GHC.Types.False -> GHC.Show.shows21
+                        GHC.Types.True -> GHC.Show.shows20 } }) -}
+6f85798f008d0c8ab110758951c82a61
+  evalWithErrorThrowing1 :: (GHC.Types.Char -> b -> b) -> b -> b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U>,
+     Unfolding: (\ @ b
+                   (c :: GHC.Types.Char -> b -> b)[OneShot]
+                   (n :: b)[OneShot] ->
+                 GHC.CString.unpackFoldrCString#
+                   @ b
+                   "not a valid bool expr: "#
+                   c
+                   n) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

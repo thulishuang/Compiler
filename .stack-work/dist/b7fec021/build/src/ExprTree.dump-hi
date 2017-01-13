@@ -1,0 +1,259 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-13 06:13:10.3848934 UTC
+
+interface compiler-0.1.0.0-I0pxvr0RakAFj74FxK0lcc:ExprTree 8001
+  interface hash: f843111cdf9c148cc05625f1d7c6fbba
+  ABI hash: 266adbf4fe1969b8c0ce81a9dc81c484
+  export-list hash: 38e16979c5c9752213d74380c27e7b0c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 36f5ed5780f13d451f8563110c8a6d30
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ExprTree.lexeme
+module dependencies: BoolExpr Parser PrettyTP REPL
+package dependencies: GenericPretty-1.2.1@GenericPretty-1.2.1-FqlYg3LhEVa3kMV6nPdaDK
+                      array-0.5.1.1@array-0.5.1.1
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-4RIYnAHyOmg6Dh17ENWi43*
+                      base-4.9.0.0* binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      hashable-1.2.4.0@hashable-1.2.4.0-Ctl752zbguF6QanxurLOm2
+                      integer-gmp-1.0.0.1
+                      integer-logarithms-1@integer-logarithms-1-E6LvTbkhTkGIa6wPB3rtJw
+                      mtl-2.2.1@mtl-2.2.1-6qsR1PHUy5lL47Hpoa4jCM
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa
+                      scientific-0.3.4.10@scientific-0.3.4.10-2Y658Wts4fDGgAkWhKOJwC
+                      text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-4RIYnAHyOmg6Dh17ENWi43:Data.Attoparsec.Text.Internal
+         base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.4.0@hashable-1.2.4.0-Ctl752zbguF6QanxurLOm2:Data.Hashable.Generic
+         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text
+         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text.Show
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3:Data.Vector.Fusion.Bundle
+family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-4RIYnAHyOmg6Dh17ENWi43:Data.Attoparsec.Internal.Types
+                         base-4.9.0.0:Control.Applicative base-4.9.0.0:Data.Complex
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Functor.Identity base-4.9.0.0:Data.List.NonEmpty
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Semigroup
+                         base-4.9.0.0:Data.Type.Equality base-4.9.0.0:Data.Version
+                         base-4.9.0.0:Data.Void base-4.9.0.0:GHC.Exts
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+                         compiler-0.1.0.0-I0pxvr0RakAFj74FxK0lcc:PrettyTP
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa:Control.Monad.Primitive
+                         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text.Lazy
+                         vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3:Data.Vector
+import  -/  attoparsec-0.13.1.0@attoparsec-0.13.1.0-4RIYnAHyOmg6Dh17ENWi43:Data.Attoparsec.Text ba4a12853cbdd66a9b1c1bfddeab7ff9
+import  -/  attoparsec-0.13.1.0@attoparsec-0.13.1.0-4RIYnAHyOmg6Dh17ENWi43:Data.Attoparsec.Text.Internal d4f930cb8cb2c52be61d6ad3073d0922
+import  -/  base-4.9.0.0:Control.Applicative fdcece230f8af145aec7b432bfe73083
+import  -/  base-4.9.0.0:Data.Functor 67cebb006c069ea73adcd2d468cdb0dc
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  base-4.9.0.0:System.Environment b460b4a8ded59bf876fca87a5a3550f2
+import  -/  BoolExpr 6bc360c4345c527827b71d453af02c24
+  exports: 938e5a98769e0827b558347c7828b464
+import  -/  Parser 28cc00f614fbcf1e1ebbd5969da82854
+  exports: 8d4d089a11bd7c5d4a0b2e5c40ac3c8d
+import  -/  PrettyTP f419d0c6cd94b6f720df55faa30c7347
+  exports: 9e5e881bde8cb91b1ee8e5c7fb9f755f
+import  -/  REPL 181a831de1a990308493c597623ce367
+  exports: 88a0ccbda236ad7361f44f2b4dacde8f
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 59ba4f128d7d19046010538c416f3875
+import  -/  mtl-2.2.1@mtl-2.2.1-6qsR1PHUy5lL47Hpoa4jCM:Control.Monad.State d851912d62cbc95e043a9cc13c3581de
+02e3d46895a052a6f3102dba69a5b43a
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   ExprTree.$trModule2
+                   ExprTree.$trModule1) -}
+a4f43ee3fcce63465c441c346b72d6b5
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "ExprTree"#) -}
+1045a6648a34c8d98bd7da3b37c0878e
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "compiler-0.1.0.0-I0pxvr0RakAFj74FxK0lcc"#) -}
+6509d127083c367213454184ede0d1f6
+  $wgo1 ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Attoparsec.Internal.Types.More
+    -> Data.Attoparsec.Internal.Types.Success
+         Data.Text.Internal.Text
+         (Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text)
+         ()
+         r
+    -> Data.Attoparsec.Internal.Types.IResult Data.Text.Internal.Text r
+  {- Arity: 8,
+     Strictness: <S,U><S,U><S,U><L,U><L,U><S,U><L,U><L,C(C1(C1(C1(U))))>,
+     Inline: [0] -}
+f45cbded61c014c463475e3c21e35a80
+  $wlexeme ::
+    Data.Attoparsec.Text.Internal.Parser a
+    -> forall r.
+       GHC.Prim.ByteArray#
+       -> GHC.Prim.Int#
+       -> GHC.Prim.Int#
+       -> GHC.Prim.Int#
+       -> GHC.Prim.Int#
+       -> GHC.Prim.Int#
+       -> Data.Attoparsec.Internal.Types.More
+       -> Data.Attoparsec.Internal.Types.Failure
+            Data.Text.Internal.Text
+            (Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text)
+            r
+       -> Data.Attoparsec.Internal.Types.Success
+            Data.Text.Internal.Text
+            (Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text)
+            a
+            r
+       -> Data.Attoparsec.Internal.Types.IResult Data.Text.Internal.Text r
+  {- Arity: 10,
+     Strictness: <L,C(C1(C1(C1(C1(U)))))><S,U><S,U><S,U><L,U><L,U><S,U><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: Data.Attoparsec.Text.Internal.Parser a)
+                   @ r
+                   (ww :: GHC.Prim.ByteArray#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Prim.Int#)
+                   (w1 :: Data.Attoparsec.Internal.Types.More)
+                   (w2 :: Data.Attoparsec.Internal.Types.Failure
+                            Data.Text.Internal.Text
+                            (Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text)
+                            r)
+                   (w3 :: Data.Attoparsec.Internal.Types.Success
+                            Data.Text.Internal.Text
+                            (Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text)
+                            a
+                            r) ->
+                 ExprTree.$wgo1
+                   @ r
+                   ww
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   w1
+                   (\ (t' :: Data.Attoparsec.Internal.Types.State
+                               Data.Text.Internal.Text)
+                      (pos' :: Data.Attoparsec.Internal.Types.Pos)[OneShot]
+                      (more' :: Data.Attoparsec.Internal.Types.More)[OneShot]
+                      (a1 :: ())[OneShot] ->
+                    case pos'
+                           `cast`
+                         (Data.Attoparsec.Internal.Types.N:Pos[0]) of nt1 { GHC.Types.I# ipv1 ->
+                    w `cast`
+                    (Data.Attoparsec.Internal.Types.N:Parser[0]
+                         <Data.Text.Internal.Text>_N <a>_R)
+                      @ r
+                      t'
+                      nt1 `cast` (Sym (Data.Attoparsec.Internal.Types.N:Pos[0]))
+                      more'
+                      w2
+                      w3 })) -}
+ce9f8b02e8d12b196bb2e1038ce0023a
+  lexeme ::
+    Data.Attoparsec.Text.Internal.Parser a
+    -> Data.Attoparsec.Text.Internal.Parser a
+  {- Arity: 6,
+     Strictness: <L,C(C1(C1(C1(C1(U)))))><S(SSSLL),1*U(U,U,U,U,U)><S(S),1*U(U)><L,U><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                ExprTree.lexeme1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Data.Attoparsec.Text.Internal.Parser a>_R
+                 ->_R Sym (Data.Attoparsec.Internal.Types.N:Parser[0]
+                               <Data.Text.Internal.Text>_N <a>_R)) -}
+bbb693d409f5ac3c7ca08d44b994d7ac
+  lexeme1 ::
+    Data.Attoparsec.Text.Internal.Parser a
+    -> forall r.
+       Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text
+       -> Data.Attoparsec.Internal.Types.Pos
+       -> Data.Attoparsec.Internal.Types.More
+       -> Data.Attoparsec.Internal.Types.Failure
+            Data.Text.Internal.Text
+            (Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text)
+            r
+       -> Data.Attoparsec.Internal.Types.Success
+            Data.Text.Internal.Text
+            (Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text)
+            a
+            r
+       -> Data.Attoparsec.Internal.Types.IResult Data.Text.Internal.Text r
+  {- Arity: 6,
+     Strictness: <L,C(C1(C1(C1(C1(U)))))><S(SSSLL),1*U(U,U,U,U,U)><S(S),1*U(U)><L,U><L,U><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ a
+                   (w :: Data.Attoparsec.Text.Internal.Parser a)
+                   @ r
+                   (w1 :: Data.Attoparsec.Internal.Types.State
+                            Data.Text.Internal.Text)
+                   (w2 :: Data.Attoparsec.Internal.Types.Pos)
+                   (w3 :: Data.Attoparsec.Internal.Types.More)
+                   (w4 :: Data.Attoparsec.Internal.Types.Failure
+                            Data.Text.Internal.Text
+                            (Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text)
+                            r)
+                   (w5 :: Data.Attoparsec.Internal.Types.Success
+                            Data.Text.Internal.Text
+                            (Data.Attoparsec.Internal.Types.State Data.Text.Internal.Text)
+                            a
+                            r) ->
+                 case w1
+                        `cast`
+                      (Sub (Data.Attoparsec.Internal.Types.D:R:StateText[0])) of ww { Data.Attoparsec.Text.Buffer.Buf ww1 ww2 ww3 ww4 ww5 ->
+                 case w2
+                        `cast`
+                      (Data.Attoparsec.Internal.Types.N:Pos[0]) of ww6 { GHC.Types.I# ww7 ->
+                 ExprTree.$wlexeme
+                   @ a
+                   w
+                   @ r
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww7
+                   w3
+                   w4
+                   w5 } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
