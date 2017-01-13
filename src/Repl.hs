@@ -35,7 +35,8 @@ mainLoop env = do
         _ -> do
             putStrLn "unrecognized command!"
             mainLoop env
-            
+
+-- REPL
 defMain :: IO ()
 defMain = do
     putStrLn "This is a simple REPL"

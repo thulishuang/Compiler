@@ -56,6 +56,7 @@ parseOption = p0 <|> p1 where
         i <- parseInPath
         return (Option i o)
 
+-- 独立主程序
 defMain :: IO ()
 defMain = do
     args <- getArgs

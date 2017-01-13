@@ -19,4 +19,5 @@ genTree n
 printDoc :: IO ()
 printDoc = putStrLn (render (doc (genTree 5)))
 
+-- 语法树
 -- defMain = printDoc
