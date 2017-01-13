@@ -48,9 +48,19 @@ data Program
 
 exprParser :: Parser Expr
 exprParser = nilListParser <|> consParser <|> carParser <|> cdrParser <|> charParser <|> stringParser <|> falseParser <|> trueParser <|> notParser <|> andParser <|> orParser
-            <|> addParser <|> subParser <|> mulParser <|> divParser <|> eqlParser <|> lesParser <|> leqParser <|> morParser <|> mqlParser
+            <|> addParser <|> subParser <|> mulParser <|> divParser <|> eqlParser <|> lesParser <|> leqParser <|> morParser <|> mqlParser <|> douParser <|> intParser
             <|> variableParser
-            
+
+intParser :: Parser Expr
+intParser = do
+    ds <- many1 digit
+    return (Int (read ds))
+
+douParser :: Parser Expr
+douParser = do 
+    d <- lexeme $ double 
+    return (Dou d) 
+
 statParser :: Parser Statement
 statParser = setParser <|> skipParser <|> ifParser <|> whilestatParser <|> statlistParser
 
@@ -271,7 +281,15 @@ statslistParser = do
 nilParser :: Parser Statements
 nilParser = do
     return Nil
- 
+
+douEval :: Expr -> Double
+douEval (Dou p) = p
+douEval (Add p q) = (douEval p) + (douEval q)
+
+getDoubleExpr :: Either String Expr -> String
+getDoubleExpr (Left errStr) =  "not a valid add expr: " ++ errStr
+getDoubleExpr (Right expr) = show $ douEval expr
+
 lexeme :: Parser a -> Parser a
 lexeme p = do
     skipSpace
