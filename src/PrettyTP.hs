@@ -6,18 +6,16 @@ module PrettyTP where
 import Text.PrettyPrint
 import Text.PrettyPrint.GenericPretty
 
-data Tree a = Nil | Cons a (Tree a) (Tree a)
+data Tree a = Nil | Node a (Tree a) (Tree a) (Tree a)
     deriving (Show, Generic, Out)
     
-genTree :: Int -> Tree Int
+genTree :: String -> Tree String
 genTree n
-    | n < 0 = error "expect non-negative argument"
-    | n == 0 = Nil
-    | otherwise = Cons n t t where
-        t = genTree (n - 1)
+	= Node n t t t
+	where t = genTree n
     
 printDoc :: IO ()
-printDoc = putStrLn (render (doc (genTree 5)))
+printDoc = putStrLn (render (doc (genTree "S")))
 
 -- 语法树
 -- defMain = printDoc

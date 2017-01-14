@@ -1,6 +1,6 @@
-module Lib where
+module Interpreter where
 
-import BoolExpr
+import Parser
 import PrettyTP
 import REPL
 import qualified Data.Map as M
@@ -61,5 +61,3 @@ defMain :: IO ()
 defMain = do
     args <- getArgs
     print $ runStateT parseOption args
-    putStrLn "This is a simple REPL"
-    mainLoop (M.empty)

@@ -4,8 +4,17 @@ import qualified Data.Map as M
 import System.IO
 import Data.Attoparsec.Text
 import Data.Functor
+import Data.Text.Internal
+import Text.PrettyPrint
+import Text.PrettyPrint.GenericPretty
+import While
+import Parser
+import PrettyTreePrint
 
 type Env = M.Map String String
+
+errorhandle :: Env -> String -> Env
+errorhandle env str = env
 
 getString :: [[Char]] -> [Char]
 getString x
@@ -18,20 +27,10 @@ mainLoop env = do
     hFlush stdout
     l <- getLine
     case words l of
-        ["set",var,val] -> do
-            putStrLn (var ++ " is set to " ++ val)
-            mainLoop (M.insert var val env)
-        "set":var:val -> do
-            putStrLn (var ++ " is set to " ++ (getString val))
-            mainLoop (M.insert var (getString val) env)
-        ["view",var] -> case M.lookup var env of
-            Just val -> do
-                putStrLn (var ++ " = " ++ val)
-                mainLoop env
-            Nothing -> do
-                putStrLn "variable not found!"
-                mainLoop env
-        ["exit"] -> putStrLn "Bye~"
+        ":i":pro -> do
+            mainLoop (either (errorhandle env) (procStat env) (parseOnly statParser (getWord pro)))
+        [":t"] -> putStrLn "To do"
+        [":q"] -> putStrLn "Bye~"
         _ -> do
             putStrLn "unrecognized command!"
             mainLoop env

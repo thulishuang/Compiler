@@ -15,15 +15,11 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Lib
-  other-modules:       BoolExpr
-                     , PrettyTP
+  exposed-modules:     Interpreter
+  other-modules:       PrettyTP
                      , REPL
                      , While
-                     , Calculate
-                     , ExprTree
                      , Parser
-                     , StringExpr
   build-depends:       base >= 4.7 && < 5
                      , text
                      , attoparsec
