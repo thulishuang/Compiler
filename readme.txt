@@ -15,6 +15,7 @@
 
 1.在compiler目录下运行stack build命令得到主程序
 
+//或者运行compiler-exe.exe +参数
 2.运行stack exec compiler -- --in input.txt --out output.txt 命令：
 	--in指定输入文件的路径。--out 指定将解释的结果输出到哪个文件。 如果不指定--out选项，那么结果应输出到stdout 
 
