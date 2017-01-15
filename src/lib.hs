@@ -101,20 +101,24 @@ processFile (Option inPath outPath optType,strlis) = do
                    if outPath == ""
                        then do stdinProcessLine inh
                                hClose inh
+                               putStrLn "The value results have finished writting."
                                --hClose ouh
                        else do ouh <- openFile outPath WriteMode
                                inProcessLine inh ouh
                                hClose inh
                                hClose ouh
+                               putStrLn "The value results have been written to the output file."
         "tree" -> do inh <- openFile inPath ReadMode
                      if outPath == ""
                          then do stdtreeProcessLine inh
                                  hClose inh
+                                 putStrLn "The Syntax Tree have finished writting."
                                --hClose ouh
                          else do ouh <- openFile outPath WriteMode
                                  treeProcessLine inh ouh
                                  hClose inh
                                  hClose ouh
+                                 putStrLn "The Syntax Tree have been written to the output file."
         "repl" -> putStrLn "This is a simple REPL. Be my guest!"
 
 inProcessLine :: Handle -> Handle -> IO()
@@ -157,10 +161,13 @@ defMain :: IO ()
 defMain = do
     args <- getArgs
     print args
+    putStrLn "The input path info is:"
+    print $ fromJust (runStateT parseOption args)
     case args of
         ["--repl"] -> do
             putStrLn "Welcome to REPL mode. Be my guest!"
             mainLoop (M.empty) ""
         _ -> do
             processFile $ fromJust (runStateT parseOption args)
-    print $ fromJust (runStateT parseOption args)
+    putStrLn "Thanks for using！"
+   
