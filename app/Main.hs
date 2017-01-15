@@ -1,8 +1,6 @@
 module Main where
 
-import Parser
-import REPL
-import Interpreter
+import Lib
 
 main :: IO ()
 main = defMain
